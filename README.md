@@ -7,7 +7,7 @@ Examine is a platform for measuring the similarity of persian academic questions
 ![](https://github.com/mohammadmahdinoori/Examine/blob/main/Images/Examine%20Main%20Figure.jpg?raw=true)
 
 # Text Similarity
-Text Similarity is the problem of measuring the similarity of given pieces of texts in terms of real-valued scores. Text Similarity is mainly done by learning a meaningful latent represetnation of texts which can be then used for similarity measurement. In other words, we first learn a model which is used to encode the meaning of each piece of text into an n-dimensional vector, and then use common distance functions like cosine-similarity or euclidean distance as the similarity factor for the obtained vectors. In this scenario, similar vectors in the embedding space or latent space represent similar texts and un-similar vectors represent not similar texts in terms of meaning. Overall, we aim to learn a model which can satisfy explained factors.
+Text Similarity is the problem of measuring the similarity of given pieces of texts in terms of real-valued scores. Text Similarity is mainly done by learning a meaningful latent represetnation of texts which can be then used for similarity measurement. In other words, we first learn a model which is used to encode the meaning of each piece of text into an n-dimensional vector, and then use common distance functions like cosine-similarity or euclidean distance as the similarity factor for the obtained vectors. In this scenario, similar vectors in the embedding space or latent space represent similar texts and unsimilar vectors represent not similar texts in terms of meaning. Overall, we aim to learn a model which can satisfy explained factors.
 
 ## Common Models For Text Similarity
 With the advent of Transformers and attention-based models, especially google's BERT model, Text Similarity is mostly done by BERT and other similar variations like RoBERTa, DeBERTa and etc. 
@@ -22,7 +22,7 @@ $Loss = Y \times D^2 + (1 - Y) \times max(Margin - D, 0)^2$
 <br/>
 `D` is the distance between the encodings of the given pair of texts. 
 <br/>
-`Margin` is the minimum distance between two un-similar texts. 
+`Margin` is the minimum distance between two unsimilar texts. 
 
 # Problems With The Current Methods And Introducing LASM
 Since self-attention mecahnism comes with the major disadvantage of Quadratic Complexity, it is not useful for long sequences and since we want our method to be efficient we need to make the complexity linear. Which can be done by various methods like local attention, kernels for decomposing softmax, using global memories, and etc. But for this work we chosed to use a simple kernel which is elu(x) + 1 to decompose softmax function and achieve linear complexity. This method was previously introduced in the following [paper](https://arxiv.org/abs/2006.16236). So this is the first improvement in LASM.
