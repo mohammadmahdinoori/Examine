@@ -33,6 +33,7 @@ For the second improvment we tried to use multiple `[CLS]` (pooler) tokens to fo
 
 # How LASM Works
 
+[Watch our video](https://drive.google.com/file/d/1PWQMLPVo9dh3sam2lc8YEeaIAH6SRqYF/view?usp=sharing)
 
 # OCR
 For the OCR section of our work, we are mainly relying on the open source tesseract library. However, we are aiming to build our own ocr models based on Vision Transformers and try to train it jointly with our LASM model so they can match pretty well together and make the process of turining images into texts easier.
