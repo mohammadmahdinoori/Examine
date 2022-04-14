@@ -25,7 +25,7 @@ $Loss = Y \times D^2 + (1 - Y) \times max(Margin - D, 0)^2$
 `Margin` is the minimum distance between two unsimilar texts. 
 
 # Problems With The Current Methods And Introducing LASM
-Since self-attention mecahnism comes with the major disadvantage of Quadratic Complexity, it is not useful for long sequences and since we want our method to be efficient we need to make the complexity linear. Which can be done by various methods like local attention, kernels for decomposing softmax, using global memories, and etc. But for this work we chosed to use a simple kernel which is elu(x) + 1 to decompose softmax function and achieve linear complexity. This method was previously introduced in the following [paper](https://arxiv.org/abs/2006.16236). So this is the first improvement in LASM.
+Since self-attention mecahnism comes with the major disadvantage of Quadratic Complexity, it is not useful for long sequences and since we want our method to be efficient we need to make the complexity linear. Which can be done by various methods like local attention, kernels for decomposing softmax, using global memories, and etc. But for this work we chose to use a simple kernel which is elu(x) + 1 to decompose softmax function and achieve linear complexity. This method was previously introduced in the following [paper](https://arxiv.org/abs/2006.16236). So this is the first improvement in LASM.
 
 For the second improvment we tried to use multiple `[CLS]` (pooler) tokens to form a versetile global memory while maintaining the linear complexity of the new attention mechanism. As a result, instead of relying on the pooled representation obtained by only one token we use n tokens to obtain a summary of the given text which tends to be more accurate.
 
