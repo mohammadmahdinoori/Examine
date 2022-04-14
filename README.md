@@ -29,6 +29,8 @@ Since self-attention mecahnism comes with the major disadvantage of Quadratic Co
 
 For the second improvment we tried to use multiple `[CLS]` (pooler) tokens to form a versetile global memory while maintaining the linear complexity of the new attention mechanism. As a result, instead of relying on the pooled representation obtained by only one token we use n tokens to obtain a summary of the given text which tends to be more accurate.
 
+![](https://github.com/mohammadmahdinoori/Examine/blob/main/Images/LASM%20Main%20Figure.jpg?raw=true)
+
 # How LASM Works
 
 
