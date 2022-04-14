@@ -34,4 +34,8 @@ For the second improvment we tried to use multiple `[CLS]` (pooler) tokens to fo
 # How LASM Works
 
 
+
+https://user-images.githubusercontent.com/70545966/163450309-a93173f6-5eb7-4741-a8c7-af1a26059f1a.mp4
+
+
 <!-- https://user-images.githubusercontent.com/58986949/115314310-805b2780-a1a7-11eb-8558-648a367ea231.mp4 -->
