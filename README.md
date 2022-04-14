@@ -34,8 +34,7 @@ For the second improvment we tried to use multiple `[CLS]` (pooler) tokens to fo
 # How LASM Works
 
 
+# OCR
+For the OCR section of our work, we are mainly relying on the open source tesseract library. However, we are aiming to build our own ocr models based on Vision Transformers and try to train it jointly with our LASM model so they can match pretty well together and make the process of turining images into texts easier.
 
-https://user-images.githubusercontent.com/70545966/163450309-a93173f6-5eb7-4741-a8c7-af1a26059f1a.mp4
-
-
-<!-- https://user-images.githubusercontent.com/58986949/115314310-805b2780-a1a7-11eb-8558-648a367ea231.mp4 -->
+However as mentioned before, There is a problem in our context which is that images might contain LATEX as well and it is super hard for a deep learning model to accurately convert images that contain both natural language and LATEX to text. Threfore, we found a model called FI-FO which is designed to find Figures and Formulas in an image and by using this model we will be able to convert images of natural language and LATEX seprately to their corresponding text and learn different models that are specialized in one of the areas.
