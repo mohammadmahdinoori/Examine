@@ -14,7 +14,7 @@ With the advent of Transformers and attention-based models, especially google's 
 
 ## Common Losses For Text Similarity
 
-There are different ways to model the task of Text Similarity, However the most common losses for this task are `Contrastive Losses` which are designed in such way that they make encodings of the similar texts close in the embedding space and encodings of un-simillar texts far in the embedding space. The loss that we are using in our model is as follows:
+There are different ways to model the task of Text Similarity, However the most common losses for this task are `Contrastive Losses` which are designed in such way that they make encodings of the similar texts close in the embedding space and encodings of unsimilar texts far in the embedding space. The loss that we are using in our model is as follows:
 
 $Loss = Y \times D^2 + (1 - Y) \times max(Margin - D, 0)^2$
 
