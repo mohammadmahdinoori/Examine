@@ -38,3 +38,10 @@ For the second improvment we tried to use multiple `[CLS]` (pooler) tokens to fo
 For the OCR section of our work, we are mainly relying on the open source tesseract library. However, we are aiming to build our own ocr models based on Vision Transformers and try to train it jointly with our LASM model so they can match pretty well together and make the process of turining images into texts easier.
 
 However as mentioned before, There is a problem in our context which is that images might contain LATEX as well and it is super hard for a deep learning model to accurately convert images that contain both natural language and LATEX to text. Threfore, we found a model called FI-FO which is designed to find Figures and Formulas in an image and by using this model we will be able to convert images of natural language and LATEX seprately to their corresponding text and learn different models that are specialized in one of the areas.
+
+# Visualizing Embedding Space
+
+This is the embedding space before training:
+
+This is the embedding space after training:
+
