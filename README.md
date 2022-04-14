@@ -18,7 +18,7 @@ There are different ways to model the task of Text Similarity, However the most 
 
 $Loss = Y \times D^2 + (1 - Y) \times max(Margin - D, 0)^2$
 
-`Y` is the label for the given pairs of text and indicates whether they are similar or not. It can be either 1 (similar) or 0 (unsimilar).
+`Y` is the label for the given pair of texts and indicates whether the texts are similar or not. It can be either 1 (similar) or 0 (unsimilar).
 <br/>
 `D` is the distance between the encodings of the given pair of texts. 
 <br/>
