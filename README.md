@@ -7,7 +7,7 @@ Examine is a platform for measuring the similarity of persian academic questions
 ![](https://github.com/mohammadmahdinoori/Examine/blob/main/Images/Examine%20Main%20Figure.jpg?raw=true)
 
 # Text Similarity
-Text Similarity is the problem of measuring the similarity of given pieces of texts in terms of real-valued scores. Text Similarity is mainly done by learning a meaningful latent represetnation of texts which can be then used for similarity measurement. In other words, we first learn a model which is used to encode the meaning of each piece of text into an n-dimensional vector, and then use common distance functions like cosine-similarity or euclidean distance as the similarity factor for the obtained vectors. In this scenario, similar vectors in the embedding space or latent space represent similar texts and unsimilar vectors represent not similar texts in terms of meaning. Overall, we aim to learn a model which can satisfy explained factors.
+Text Similarity is the problem of measuring the similarity of given pieces of texts in terms of real-valued scores. Text Similarity is mainly done by learning a meaningful latent represetnation of texts which can be then used for similarity measurement. In other words, we first learn a model which is used to encode the meaning of each piece of text into an n-dimensional vector, and then use common distance functions like cosine-similarity or euclidean distance as the similarity factor for the obtained vectors. In this scenario, similar vectors in the embedding space or latent space represent similar texts and unsimilar vectors represent unsimilar texts in terms of meaning. Overall, we aim to learn a model which can satisfy explained factors.
 
 ## Common Models For Text Similarity
 With the advent of Transformers and attention-based models, especially google's BERT model, Text Similarity is mostly done by BERT and other similar variations like RoBERTa, DeBERTa and etc. 
@@ -18,7 +18,7 @@ There are different ways to model the task of Text Similarity, However the most 
 
 $Loss = Y \times D^2 + (1 - Y) \times max(Margin - D, 0)^2$
 
-`Y` is the label for the given pairs of text and indicates whether they are similar or not. It can be either 1 (similar) or 0 (not similar).
+`Y` is the label for the given pairs of text and indicates whether they are similar or not. It can be either 1 (similar) or 0 (unsimilar).
 <br/>
 `D` is the distance between the encodings of the given pair of texts. 
 <br/>
