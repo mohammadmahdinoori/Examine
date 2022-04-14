@@ -43,5 +43,8 @@ However as mentioned before, There is a problem in our context which is that ima
 
 This is the embedding space before training:
 
+![](https://github.com/mohammadmahdinoori/Examine/blob/main/Images/Embeddings%20Before%20Training.png?raw=true)
+
 This is the embedding space after training:
 
+![](https://github.com/mohammadmahdinoori/Examine/blob/main/Images/Embeddings%20After%20Training.png?raw=true)
