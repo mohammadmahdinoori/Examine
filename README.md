@@ -1,6 +1,8 @@
 # Examine
 A contrastive approach for measuring the semantic similarity of persian academic questions based on Transformers in deep learning.
 
+https://user-images.githubusercontent.com/70545966/163529973-6eb69c74-af2c-479a-8b18-7969230ff5ba.mp4
+
 # What is Examine
 Examine is a platform for measuring the similarity of persian academic questions based on deep learning techniques, mainly Transformers and especially Google's BERT model. In this work we conducted a research on various nlp techniques in the field of text similarity and various techniques in the field of OCR epecially when images include LATEX besides natural language. In addition, we tried to come up with a novel deep learning model for efficient text similarity called Linear Attention Summarizer Model or `LASM`.
 
